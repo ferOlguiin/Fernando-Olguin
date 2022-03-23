@@ -1,0 +1,237 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.rubyBody {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(#f8b328, #F2994A);
+
+}
+
+.navbg {
+    background: linear-gradient(to right, #1e4d4b, rgb(14, 13, 13));
+    box-shadow: 0 3px 8px rgb(43, 40, 40);
+}
+
+.tittlePrincipal {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#imgprincipal {
+    filter: hue-rotate(220deg) drop-shadow(5px 5px 8px black);
+    width: 500px;
+    height: 500px;
+}
+
+.listaNav {
+    display: flex;
+}
+.listaNav a {
+    color: white;
+    font-size: 18px;
+}
+
+.listaNav a:hover {
+    color: rgb(71, 255, 246);
+    text-shadow: 0 0 2px rgb(71, 255, 246), 0 0 5px rgb(71, 255, 246), 0 0 15px rgb(71, 255, 246);
+    transition: 0.4s;
+    transform: scale(1.3);
+}
+
+.texth1nav {
+    color: transparent;
+    filter: drop-shadow(1px 1px 2px black);
+    font-size: 55px;
+    padding: 10px;
+    background-image:url(./imagenes/textImg.jpeg);
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+.iconSec {
+    font-size: 100px;
+    padding: 15px;
+}
+
+.backdropp {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+    .backdropp {
+        width: 100%;
+    }
+}
+
+.fa-html5 {
+    color: #e34c26;
+    filter: drop-shadow(-1px -1px 11px white) drop-shadow(-2px -2px 18px white);
+
+
+}
+.fa-css3-alt {
+    color: #264de4;
+    filter: drop-shadow(-1px -1px 11px white) drop-shadow(-2px -2px 18px white);
+}
+.fa-bootstrap {
+    color: #563d7c;
+    filter: drop-shadow(-1px -1px 11px white) drop-shadow(-2px -2px 18px white);
+
+}
+.fa-sass {
+    color: #cc6699;
+    filter: drop-shadow(-1px -1px 11px white) drop-shadow(-2px -2px 18px white);
+    
+}
+.fa-js {
+    color: #f0db4f;
+    filter: drop-shadow(-1px -1px 11px white) drop-shadow(-1px -1px 15px white);
+}
+.fa-react {
+    color: #61DBFB;
+    filter: drop-shadow(-1px -1px 11px white) drop-shadow(-2px -2px 18px white);
+}
+
+.imgA {
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 65px;
+    box-shadow:  6px 6px 12px #8b571b,
+             -6px -6px 12px #ed932d;
+}
+
+.avatar {
+    width: 275px;
+    height: 295px;
+    filter: drop-shadow(5px 5px 8px black);
+}
+
+.imgLibreta {
+    width: 210px;
+    height: 210px;
+    filter: drop-shadow(3px 4px 6px black);
+}
+
+.imgConocimiento {
+    filter: drop-shadow(4px 4px 6px black);
+}
+
+.listaArtc1 li {
+    list-style-image: url(./imagenes/item\ check2.svg);
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+}
+
+.libro img {
+    width: 666px;
+    height: 375px;
+}
+
+.gify {
+    background-color: #2a282c48;
+    background-image: url(./imagenes/notebook.jpg);
+    background-repeat: none;
+    background-size: 115%;
+    animation: movimiento 11s infinite ease-out alternate;
+}
+
+@keyframes movimiento {
+    0% {
+        background-position: bottom left;
+    }
+    30% {
+        background-position: top right;
+    }
+    60% {
+        background-position: top left;
+    }
+    100% {
+        background-position: bottom right;
+    }
+}
+
+
+.logodef {
+    width: 150px;
+    height: 90px;
+    filter: drop-shadow(1px 1px 1px rgb(226, 211, 211));
+}
+.logodef:hover {
+    transition: 0.4s;
+    transform: rotate3d(1, 2, 3, 360deg);
+}
+
+.fa-github {
+    color: rgb(255, 255, 255);
+}
+.fa-github:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
+    transform: rotate3d(1, 2, 3, 360deg);
+}
+
+
+.iconFormEnv {
+    width: 450px;
+    height: 450px;
+}
+
+#barras {
+    display: none;
+}
+
+@media only screen and (max-width: 999px) {
+    #barras {
+        display: flex;
+        align-items: center;
+        padding-bottom: 4px;
+        font-size: 30px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .NavComun {
+        display: none !important;
+    }
+
+    .NavResponsive {
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .NavResponsive a {
+        color: white;
+        font-size: 18px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .NavResponsive a:hover {
+        color: rgb(247, 134, 6);
+    }
+    .NavResponsive i {
+        font-size: 18px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}

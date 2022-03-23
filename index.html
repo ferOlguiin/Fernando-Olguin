@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Olguin">
+    <link rel="icon" href="./imagenes/logodef.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b27b57eb8a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Fernando Olguin</title>
+</head>
+
+<body class="rubyBody">
+        <!-- Navbar -->
+    <header id="headerX">
+        <nav class="container-fluid navbg text-white" id="up">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center">
+                    <a class="text-decoration-none" href="index.html"><h1 class="tittlePrincipal">Fernando Olguin</h1></a>
+                </div>
+                <div class="col-md-7 col-sm-12 d-flex justify-content-end align-items-center">
+                    <div class="NavComun listaNav">
+                        <a href="index.html" class="nav-link p-4">Inicio</a>
+                        <a href="#avatar" class="nav-link p-4">Sobre mi</a>
+                        <a href="#work" class="nav-link p-4">Proyectos</a>
+                        <a href="#contacto" class="nav-link p-4">Contacto</a>
+                    </div>
+                </div>
+                <div class="col-12 pe-0">
+                    <button class="btn float-end text-white" id="barras"><i class="fas fa-bars"></i></button>
+                    <ul class="NavResponsive d-none" id="navresp">
+                        <a href="index.html" class="border-start rounded-pill p-2 nav-link">Inicio</a>
+                        <a href="#avatar" class="border-start rounded-pill p-2 nav-link">Sobre mi</a>
+                        <a href="#contacto" class="border-start rounded-pill p-2 nav-link">Contacto</a>
+                        <a href="#work" class="border-start rounded-pill p-2 nav-link">Proyectos</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Introduccion -->
+        <article>
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-sm-12 d-flex justify-content-center align-items-center flex-row flex-wrap">
+                        <img src="./imagenes/computer2.png" id="imgprincipal" alt="Responsive design">
+                        <h2 class="fw-bold texth1nav text-break" id="tituloprincipal">Desarrollador Web Front-End</h2>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Sobre mi -->
+        <article>
+            <div class="container-fluid d-flex align-items-center flex-wrap p-5">
+                <div class="row">
+                    <div class="col-sm-3 d-flex justify-content-end align-items-center">
+                        <img src="./imagenes/avatar.png" class="avatar img-fluid" id="avatar">
+                    </div>
+                    <div class="col-sm-6 d-grid justify-content-start align-items-center sobreMi">
+                        <h1 class="fw-bold">Hola, mi nombre es Fernando, soy Desarrollador Front End</h1>
+                        <p class="fs-5">Me apasiona la programación, los diseños, los detalles y trato de plasmar tanto mi lado lógico como creativo en cada uno de los proyectos que realizo.</p>
+                    </div>
+                </div>
+            </div>    
+        </article>
+        <!-- Mi trabajo -->
+        <article>
+            <div class="container-fluid p-5">
+                <div class="row d-flex justify-content-end align-items-center">
+                    <div class="col-sm-6 d-grid justify-content-end align-items-center miTrabajo">
+                        <h2 class="fw-bold">Mis trabajos</h2>
+                        <p class="fs-5">Soy bastante flexible en lo que hago, puedo trabajar con plantillas genéricas con el mismo entusiasmo que cuando trabajo con diseños más personalizados. Generalmente un sitio web es la primera impresión que reciben tus clientes, por esa razón es que le dedico mucho tiempo y cariño a la personalización de los proyectos ya que me gusta que el sitio web quede vistoso y bien estructurado.</p>
+                    </div>
+                    <div class="col-sm-3 d-flex justify-content-end align-items-center">
+                        <img src="./imagenes/notes.png" class="imgLibreta img-fluid">
+                    </div>
+                </div>
+            </div>
+        </article>
+         <!-- Galeria -->
+         <article>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner p-5" id="work">
+                  <div class="carousel-item active p-1">
+                    <a href="https://github.com/ferOlguiin?tab=repositories" target="_BLANK"><img src="./imagenes/imgSlider1.jpg" class="d-block w-100 img-fluid imgA" alt="slider1"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fw-bold fs-3">GitHub</h5>
+                      <p class="fs-5">Clickea y podrás encontrar mis repositorios más recientes</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item p-1">
+                    <img src="./imagenes/imgSlider2.webp" class="d-block w-100 img-fluid imgA" alt="slider2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fw-bold fs-3 text-white">Una web a tu gusto</h5>
+                      <p class="fs-5">Desde plantillas genéricas hasta páginas más personalizadas</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+         </article>
+        <!-- Conocimientos -->
+        <article>
+            <div class="container-fluid">
+                <div class="row m-0">
+                    <div class="col-md-6 p-5">
+                        <h2 class="text-center text-dark mb-4 fs-1 fw-bold">Conocimiento técnico y habilidades</h2>
+                        <h4 class="text-center text-dark fs-3 mb-4 fw-bold"><i class="fas fa-code rounded-circle"></i> Desarrollo Front-End (lado del cliente)</h3>
+                        <ul class="listaArtc1 d-grid justify-content-center align-items-center">
+                            <li>Html 5</li>
+                            <li>Css 3, Css grid, Flex Box</li>
+                            <li>Sass</li>
+                            <li>Javascript</li>
+                            <li>Librerias de js: React.js</li>
+                            <li>Responsive Web Design</li>
+                            <li>Framework: Bootstrap</li>
+                            <li>Programas: Visual Studio Code y Sublime text</li>
+                            <li>Control de versiones: Git y Github</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-start align-items-center libro">
+                        <img class="imgConocimiento" src="./imagenes/libro12.png">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Iconos de conocimiento -->
+        <article>
+            <div class="container-fluid d-flex justify-content-around align-items-center p-5 flex-wrap">
+                <i class="iconSec p-4 fab fa-html5"></i>
+                <i class="iconSec p-4 fab fa-css3-alt"></i>
+                <i class="iconSec p-4 fab fa-bootstrap"></i>
+                <i class="iconSec p-4 fab fa-sass"></i>
+                <i class="iconSec p-4 fab fa-js"></i>
+                <i class="iconSec p-4 fab fa-react"></i>
+            </div>
+        </div>
+        </article>
+        <!-- Formulario -->
+        <article class="gify p-3">
+            <div class="container d-flex justify-content-center align-items-center flex-wrap" id="contacto">
+                <img src="./imagenes/mails.png" class="iconFormEnv img-fluid" alt="">   
+                <form class="backdropp p-3" id="formulario" novalidate action="https://formsubmit.co/ajax/feergui997@gmail.com" method="POST">
+              <h2 class="text-white h11 text-center bg-dark bg-opacity-50 text-break">Contáctame</h2>
+              <input
+                class="form-control mb-2"
+                name="userName"
+                placeholder="Nombre*"
+                autocomplete="off"
+                id="userName"
+                type="text"
+                required
+            />
+               <span class="fs-6 fw-bold" id="labelUserName"></span>
+              <input
+                class="form-control mb-2"
+                name="userEmail"
+                placeholder="Correo*"
+                id="userEmail"
+                autocomplete="off"
+                type="email"
+                required
+            />
+               <span id="labelUserEmail" class="fs-6 fw-bold"></span>
+                <textarea class="form-control" name="textarea" placeholder="Mensaje" id="exampleFormControlInput1" rows="9"></textarea>
+                <span id="labelTextArea"></span>
+               <button class="btn w-100 btn-warning d-block mb-2 mt-1 fs-5 text-break" type="submit">Enviar</button>
+               <div id="msgAlert" class="d-block fs-6">
+            </div>  
+        </form>
+    </div>
+        <a href="#imgprincipal" id="btnFloat"><button class="btn btn-light opacity-75 float-end"><i class="fas fa-angle-up fs-3"></i></button></a>
+        </article>
+    </main>
+    <footer class="bg-dark">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                    <img src="./imagenes/logodef.png" class="logodef" alt="logo">
+                </div>
+                <div class="col-sm-6 text-white d-flex align-items-center fs-1 justify-content-center flex-wrap">
+                        <a href="https://github.com/ferOlguiin?tab=repositories" target="_BLANK" class="text-decoration-none"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <h6 class="text-white text-break p-2">Fernando Olguin - Desarrollador Web ©2022</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
